@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ruler_number"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@id/RulerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/ruler_number"
+        android:textColor="#9ACD32"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/tv_ruler_unit"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@id/RulerView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@id/tv_ruler_number"
+        android:text="@string/ruler_unit"
+        android:textColor="#9ACD32"
+        android:textSize="20sp" />
+
+    <com.ucar.practiced.RulerView
+        android:id="@+id/RulerView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true" />
+
+    <View
+        android:id="@+id/view_pointer"
+        android:layout_width="4dp"
+        android:layout_height="32dp"
+        android:layout_below="@id/tv_ruler_number"
+        android:layout_centerHorizontal="true"
+        android:background="#9ACD32" />
+
+</RelativeLayout>
